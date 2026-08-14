@@ -1,0 +1,143 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic tag</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: darkgoldenrod;
+            color: rgb(18, 19, 19);
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+        }
+        li{
+            font-size: 19px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        header{
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: lightgreen;
+        }
+        main{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        section{
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(210, 115, 115);
+        }
+        figure{
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgb(53, 49, 49);
+            height: 250px;
+            width: 350px;
+            padding: 15px;
+            background-color: rgb(185, 38, 38);
+        }
+        img{
+            border-radius: 15px;
+        }
+        figcaption{
+            text-align: center;
+            font-weight: bold;
+        }
+        article{
+            height: 250PX;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        article aside:nth-child(1){
+            background-color: rgb(230, 126, 188);
+        }
+        article aside:nth-child(2){
+            background-color: rgb(85, 104, 225);
+        }footer{
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: chocolate;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>My logo</h2>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>welcome to semantic tag</h1>
+            <p>here we will get to know how to use semantic tag in html and what is the meaning of these tag</p>
+
+       
+        <button style="color:red;">Get started</button>
+    </header>
+    <main>THIS IS MAIN TAG</main>
+    <section>
+        <figure>
+            <img src="https://wordpress.wbur.org/wp-content/uploads/2022/05/0505_umb-graduation.jpg" alt=""height="180">
+        </figure>
+            <figcaption> Graduation Day</figcaption>
+        </section>
+    <article>
+        <aside>
+            <h2> Collage Event </h2>
+        </aside>
+        <aside>
+            <h2> About Students </h2>
+        </aside>
+        
+    </article>
+
+            <footer>
+                <details>
+                    <summary>ABOUT OUR COLLEGE</summary>
+                    <p> welcome to our collage website. Here you can find information about student events and activities.</p>
+                </details>
+            </footer>
+
+    
+</body>
+</html>
